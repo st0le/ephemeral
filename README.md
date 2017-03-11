@@ -14,6 +14,8 @@ The webapp uses the client ip to store the text snippet, in the most common scen
 -----------------------
 If a user has dynamic ip, this app will work as long as the ip is not renewed. Please note, your ip can be assigned to another user who will be able to read the text you shared. It is not recommended you use ephemeral to share any sensitive information.
 
+The demo hosted on pythonanywhere.com doesn't support ipv6.
+
 .features
 ---------
 - no registration
