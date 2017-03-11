@@ -1,5 +1,10 @@
-from flask import Flask, request, render_template, redirect, url_for
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
+# ephemeral by st0le
+# quick way share text between your network devices 
+
+from flask import Flask, request, render_template, redirect, url_for
 db = {}
 app = Flask(__name__)
 
@@ -18,4 +23,4 @@ def post():
     return redirect(url_for('get'))
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0")
+    app.run(host="0.0.0.0")
