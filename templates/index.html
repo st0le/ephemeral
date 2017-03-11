@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Ephemeral</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="container">
+    <h1 class="fadeInLoad">Ephemeral</h1>
+    <form action="/" method="post">
+        <div class="row form-group">
+            <textarea class="form-control" style="resize: none; margin: auto;" name="text" id="text" rows="30" placeholder="This textpad is shared between all devices on your network...">{{ text }}</textarea>
+        </div>
+        <div class="row form-group">
+            <button class="form-control btn btn-success btn-block" type="submit">save</button>
+        </div>
+    </form>
+</body>
+<footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js"></script>
+    <h5 class="pull-right">coded with <i class="glyphicon glyphicon-heart"></i> by <a href="https://github.com/st0le">st0le</a> </h5>
+</footer>
+<style>
+    .fadeInLoad {
+        font-size: 40px;
+        animation: fadeInLoad 5s;
+    }
+    
+    @keyframes fadeInLoad {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+
+</html>
