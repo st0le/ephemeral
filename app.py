@@ -6,8 +6,18 @@
 
 from flask import Flask, request, render_template, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
+
+class Config(object):
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///test.db'
+
+class DevelopmentConfig(Config):
+    pass
+
+class PythonAnywhereConfig(Config):
+    pass
+
 app = Flask(__name__)
-app.config.from_object(".config.PythonAnywhereConfig")
+app.config.from_object(DevelopmentConfig())
 
 db = SQLAlchemy(app)
 
